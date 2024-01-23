@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All that jazz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>
+        ALL <br />
+        THAT <br />JAZZ
+    </h1>
+    <h2>
+        A homage to the musicians that <br />learnt all the rules of music,
+        <br />and then <em>broke</em> them to create <br /><strong>
+            <em>magic</em></strong>.
+    </h2>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p>
+        Jazz, the heartbeat of cool, syncopates through the soul of music, defying
+        rules and dancing on the edges of spontaneity. It's the language of the
+        night, whispered in the smoky haze of dim-lit clubs and echoed in the
+        vibrant streets of New Orleans. In this eclectic rhythm playground, the
+        legends emerge: <strong>Miles Davis</strong>, the trumpet sorcerer, paints
+        sonic landscapes, while <strong>Duke Ellington </strong>orchestrates
+        dreams with piano keys. <br /><br />Jazz is more than a genre; it's the
+        <em>art of improvisation</em>, where each note is a rebellion, and every
+        musician becomes a poet of the unpredictable, crafting melodies that echo
+        the heartbeat of freedom.
+    </p>
+    <button>GET THE PLAYLIST</button>
+    <br /><br /><br />
+    <hr />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/107/798/original/both_images_together.png?1703000533"
+        alt="Miles Davis and John Coltrane" />
+    <hr />
+    <ul>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Miles_Davis" target="_blank" title="Miles Davis"
+                class="musicians">Discover Miles Davis
+            </a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Duke_Ellington" target="_blank" title="Duke Ellington"
+                class="musicians">Discover Duke Ellington
+            </a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Tony_Allen_(musician)" target="_blank" title="Tony Allen"
+                class="musicians">Discover Tony Allen
+            </a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/John_Coltrane" target="_blank" title="John Coltrane"
+                class="musicians">Discover John Coltrane
+            </a>
+        </li>
+    </ul>
+    <br />
+    <br />
+    <div class="albumTitle">
+        Kind of
+        <span class="blue">Blue</span>
+    </div>
+    <div class="infoAlbum">
+        <em>'Kind of Blue'</em> is regarded as one of the best jazz albums
+        recorded in history, and its magical 5 tracks of modal harmonies achieved
+        what many other jazz albums couldn't: transforming the mainstream public
+        into jazz enthusiasts. Six of the best jazz musicians of all time took
+        part on this album: Saxophonists John Coltrane and Julian "Cannonball"
+        Adderley, pianist Bill Evans, bassist Paul Chambers, and drummer Jimmy
+        Cobb, with Miles Davis leading the sextet. <br /><br />
+        Whilst the whole album serves today as the bible for all aspiring jazz
+        musicians and piano players (myself included),
+        <em>'Flamenco Sketches'</em> is my all time favourite: Its soft rhythm and
+        melody, together with its melancholic atmosphere and outstanding solos and
+        harmonic changes never fail to uplift my spirits and fill me with
+        inspiration. <br /><br />
+        <strong> 🎧 Listen to Flamenco Sketches below. 🎧</strong>
+    </div>
+
+    <iframe class="spotify" style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/6dRx7OUXfvosnXG3g9lWGi?utm_source=generator" width="100%" height="152"
+        frameborder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <br />
+    <br />
+    <div class="footer">Coded by Amaia Arbizu</div>
+
+    <script>
+        function userInfo() {
+            let name = prompt("What is your name");
+            let email = prompt("What is your email?");
+            let music = prompt("Do you like music?");
+            music = music.toLowerCase();
+            music = music.trim();
+            if (music === "yes") {
+                alert(
+                    `Thanks ${name}, there is a playlist link waiting for you on your inbox!`
+                );
+            } else {
+                alert(`You do not like music, ${name}? You must be a robot! 🤖`);
+            }
+        }
+        let buttonGetPlay = document.querySelector("button");
+        buttonGetPlay.addEventListener("click", userInfo);
+    </script>
+</body>
+
+</html>
